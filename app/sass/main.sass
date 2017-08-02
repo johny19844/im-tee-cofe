@@ -42,4 +42,48 @@ body
 	max-width: 100%
 	height: auto
 
+.top-line
+	ul
+		font-size: 12px
+		list-style-type: none
+		li
+			float: left
+			display: block
+.navbar2	
+	.navbar-form 
+		.btn
+			border-radius: 20px
+			background-color: $accent
+			color: #fff
+		.form-control
+			border-radius: 20px
+	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus
+		background-color: transparent
+	.navbar-right 
+		margin: 8px 0
+		li
+			text-align: center
+			a
+				width: 40px
+				height: 40px
+				border-radius: 30px
+				background-color: $accent
+				text-align: center
+				i
+					color: #fff
+					text-align: center
+					//width: 40px
+					//height: 40px
+					//margin: 0 auto
+					display: block
+					//padding-right: 10px
+					:before
+						//padding-right: 10px
+
+			span
+				position: absolute
+				top: 0
+				right: 0
+			
+
 @import "media" // Всегда в конце
