@@ -29,149 +29,197 @@
 </head>
 
 <body>
+<!-- верхняя строка -->
 <div class="top-line">
-  <div class="container-fluid">
-    <ul>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-map-marker"></i>Краснодар<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-			<input type="text" class="form-control" placeholder="Введите город">
-            <li><a href="#">Краснодар</a></li>
-            <li><a href="#">Москва</a></li>
-            <li><a href="#">Питер</a></li>
-            <li><a href="#">Краснодар</a></li>
-            <li><a href="#">Новосибирск</a></li>
-          </ul>
-        </li>
-		<li><a href="#"><i class="fa fa-phone"></i>8(800)333-0634</a></li>
-		
-        <li><a href="#">О компании</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Оплата</a></li>
-        <li><a href="#">Невозм</a></li>
-        <li><a href="#">Акции</a></li>
-        <li><a href="#">Контакты</a></li>
-		</ul>
+	<div class="container-fluid">
+		<div class="row">
+			<ul>
+				<div class="col-md-3">
+					<div class="contacts">
+						<div class="ui floating dropdown labeled icon button">	
+							<i class="marker icon"></i>		
+							<span class="text">Краснодар</span><i class="caret"></i>					
+							<div class="menu">
+								<div class="ui icon search input">
+									<input type="text" placeholder="Введте город">
+								</div>
+								<div class="scrolling menu">
+									<div class="item">Москва</div>
+									<div class="item">Питер</div>
+									<div class="item">Краснодар</div>
+									<div class="item">Новосибирск</div>
+								</div>
+							</div>
+						</div>
+						<a href="#"><span class="phone"><i class="fa fa-phone"></i>8(800) 333-06-34</span></a>
+					</div>
+				</div>	
+				<div class="col-md-6 flex-cont">
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li class="active"><a href="#" >Оплата</a></li>
+					<li><a href="#">Невозм</a></li>
+					<li><a href="#">Акции</a></li>
+					<li><a href="#">Контакты</a></li>
+				</div>
+				<div class="col-md-3">
+					<a href="#">Личный кабинет</a>
+				</div>	
+			</ul>
+		</div>
 	</div>
 </div>
-    
+<!-- *************************************************************** -->
       
-<!-- ******************************************второй навбар******************************** -->
+<!-- ******************************************навбар******************************** -->
 <div class="navbar2">
-<nav class="navbar navbar-default">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <!-- <a class="navbar-brand" href="#">Brand</a> -->
-    </div>
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Чай <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Черный</a></li>
-            <li><a href="#">Зеленый</a></li>
-            <li><a href="#">Фруктовый чай</a></li>  
-        	<li><a href="#">Separated link</a></li>
-        	<li><a href="#">Separated link</a></li>
-        	<li><a href="#">Separated link</a></li>
-        	<li><a href="#">Separated link</a></li>
-        	<li><a href="#">Separated link</a></li>
-        	<li><a href="#">Separated link</a></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Кофе <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li> 
-            <li><a href="#">Separated link</a></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Бренды <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li> 
-            <li><a href="#">Separated link</a></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Подарки <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li><a href="#">Separated link</a></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Сладкое <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li><a href="#">Separated link</a></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left">
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Чай <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Черный</a></li>
+							<li><a href="#">Зеленый</a></li>
+							<li><a href="#">Фруктовый чай</a></li>  
+							<li><a href="#">Separated link</a></li>
+							<li><a href="#">Separated link</a></li>
+							<li><a href="#">Separated link</a></li>
+							<li><a href="#">Separated link</a></li>
+							<li><a href="#">Separated link</a></li>
+							<li><a href="#">Separated link</a></li>
+							<li><a href="#">Separated link</a></li>
+							<li><a href="#">Separated link</a></li>
+							<li><a href="#">Separated link</a></li>
+							<li><a href="#">Separated link</a></li>
+							<li><a href="#">Separated link</a></li>
+							<li><a href="#">Separated link</a></li>
+							<li><a href="#">Separated link</a></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Кофе <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li> 
+							<li><a href="#">Separated link</a></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Бренды <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li> 
+							<li><a href="#">Separated link</a></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Подарки <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li><a href="#">Separated link</a></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Сладкое <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li><a href="#">Separated link</a></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul>
+					</li>
 
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Поиск">
-        </div>
-        <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><i class="fa fa-shopping-basket fa-lg"></i></a><span class="badge">4</span></li>
-        <li><div class="basket-n">Корзина</div><div class="price">23 000<i class="fa fa-rub"></i></div></li>
-
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+					<li>
+					<form class="navbar-form navbar-left">
+						<div class="ui icon input">
+							<input type="text" placeholder="Поиск...">
+							<i class="inverted circular search link icon"></i>
+						</div>
+					</form>
+						<!-- <form class="navbar-form navbar-left">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Поиск">
+								<button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+							</div>
+						</form> -->
+					</li>
+					<li>
+						<!-- <ul class="nav navbar-nav"> -->
+						<div class="korzina">
+							<a href="#" class="korzina-znak">
+								<i class="large circular shopping basket icon"></i>
+								<a href="#" class="tiny floating ui circular label">1</a>
+								<!-- <a href="#"><i class="fa fa-shopping-basket fa-lg"></i></a><span class="badge">4</span> -->
+							</a>
+							<!-- <div class="korzina-text">
+								<span>Корзина</span>
+								<span class="price">23 000<i class="fa fa-rub"></i></span>
+							</div> -->
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 </div>
+<!-- *********************************************************** -->
 
-<!-- карусель -->
-
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<!-- **************************************карусель***************************************** -->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="5000">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
+    <div class="item">
+      <img src="img/1.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
     <div class="item active">
-      <img src="..." alt="...">
+      <img src="img/2.jpg" alt="...">
       <div class="carousel-caption">
         ...
       </div>
     </div>
     <div class="item">
-      <img src="..." alt="...">
+      <img src="img/3.jpg" alt="...">
       <div class="carousel-caption">
         ...
       </div>
     </div>
-    ...
+    <div class="item">
+      <img src="img/4.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
   </div>
 
   <!-- Controls -->
@@ -184,16 +232,311 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+<!-- ************************************************ -->
 
+<!-- картинковое меню подкаруселью -->
+<div class="content-menu">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="ui move up reveal">
+					<div class="visible content">
+					<img class="ui small image" src="img/5.jpg">
+					</div>
+					<div class="hidden content">
+						<div class="ul">
+							<ul>
+								<li>1111</li>
+								<li>2222</li>
+								<li>3333</li>
+								<li>4444</li>
+								<li>5555</li>
+								<li>666</li>
+								<li>7777</li>
+								<li>888</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="ui move up reveal">
+					<div class="visible content">
+					<img class="ui small image" src="img/6.jpg">
+					</div>
+					<div class="hidden content">
+						<img class="ui small image" src="img/1.png">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="ui move up reveal">
+					<div class="visible content">
+					<img class="ui small image" src="img/7.jpg">
+					</div>
+					<div class="hidden content">
+						111111111111111111111111111111111
+						<img class="ui small image" src="/images/avatar/large/justen.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-4">
+				<div class="ui move up reveal">
+					<div class="visible content">
+					<img class="ui small image" src="img/8.jpg">
+					</div>
+					<div class="hidden content">
+						<img class="ui small image" src="/images/avatar/large/justen.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="ui move up reveal">
+					<div class="visible content">
+					<img class="ui small image" src="img/9.jpg">
+					</div>
+					<div class="hidden content">
+						<img class="ui small image" src="/images/avatar/large/justen.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="ui move up reveal">
+					<div class="visible content">
+					<img class="ui small image" src="img/10.jpg">
+					</div>
+					<div class="hidden content">
+						<img class="ui small image" src="/images/avatar/large/justen.jpg">
+					</div>
+				</div>
+			</div>
 
+		</div>
+	</div>
+</div>
+<!-- ************************************************ -->
 
+<!-- быстрый поиск -->
+<div class="links-bistr-poisk">
+	<div class="container-fluid">
+		<div class="row">
+			<h2>Быстрый поиск</h2>
+			<div class="col-md-6 col-md-offset-3">
+				<ul class="nav nav-tabs">
+					<li class="active"><a data-toggle="tab" href="#panel1">Чай</a></li>
+					<li><a data-toggle="tab" href="#panel2">Кофе</a></li>
+					<li><a data-toggle="tab" href="#panel3">Подарки</a></li>
+					<li><a data-toggle="tab" href="#panel4">Сладкое</a></li>
+					<li><a data-toggle="tab" href="#panel5">Аксессуары</a></li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+			<div class="tab-content">
+				<div id="panel1" class="tab-pane fade in active">
+					<div class="block-filter">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-3">
+									<div class="btn-group">
+										<div class="filtr-button" data-toggle="dropdown">
+											<span>Сорт</span><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+										</div>
+										<ul class="dropdown-menu noclose">
+											<li><div class="checkbox"><label><input type="checkbox" class="sort1" value="sort1">Сорт 1</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox" class="sort2" value="sort2">Сорт 2</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox" class="sort3" value="sort3">Сорт 3</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox" class="sort4" value="sort4">Сорт 4</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox" class="sort5" value="sort5">Сорт 5</label></div></li>
+										</ul>
+									</div>
+									<div class="filter-vibor-sort"></div>
+								</div>
+								<div class="col-md-3">
+									<div class="btn-group">
+										<div class="filtr-button" data-toggle="dropdown">
+											<span>Аромат</span><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+										</div>
+										<ul class="dropdown-menu noclose">
+											<li><div class="checkbox"><label><input type="checkbox" class="aroma1" value="aroma1">Аромат 1</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox" class="aroma2" value="aroma2">Аромат 2</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox" class="aroma3" value="aroma3">Аромат 3</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox" class="aroma4" value="aroma4">Аромат 4</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox" class="aroma5" value="aroma5">Аромат 5</label></div></li>
+										</ul>
+									</div>
+									<div class="filter-vibor-aroma"></div>
+								</div>
+								<div class="col-md-3">
+									<div class="btn-group">
+										<div class="filtr-button" data-toggle="dropdown">
+											<span>Вкус</span><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+										</div>
+										<ul class="dropdown-menu noclose">
+											<li><div class="checkbox"><label><input type="checkbox" class="vkus1" value="vkus1">Вкус 1</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox" class="vkus2" value="vkus2">Вкус 2</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox" class="vkus3" value="vkus3">Вкус 3</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox" class="vkus4" value="vkus4">Вкус 4</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox" class="vkus5" value="vkus5">Вкус 5</label></div></li>
+										</ul>
+									</div>
+									<div class="filter-vibor-vkus"></div>
+								</div>
+								<div class="col-md-3">
+									<div class="btn-group">
+										<div class="filtr-button" data-toggle="dropdown">
+											<span>Сорт</span><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+										</div>
+										<ul class="dropdown-menu noclose">
+											<li><div class="checkbox"><label><input type="checkbox" class="sort1" value="sort1">Сорт 1</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox" class="sort2" value="sort2">Сорт 2</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox" class="sort3" value="sort3">Сорт 3</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox" class="sort4" value="sort4">Сорт 4</label></div></li>
+											<li><div class="checkbox"><label><input type="checkbox" class="sort5" value="sort5">Сорт 5</label></div></li>
+										</ul>
+									</div>
+									<div class="filter-vibor"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bistr-poisk-content">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-3"><img src="img/9.jpg" alt="" class="img-responsive"></div>
+								<div class="col-md-3"><img src="img/2.jpg" alt="" class="img-responsive"></div>
+								<div class="col-md-3"><img src="img/3.jpg" alt="" class="img-responsive"></div>
+								<div class="col-md-3"><img src="img/4.jpg" alt="" class="img-responsive"></div>
+								<div class="clearfix"></div>
+								<div class="col-md-3"><img src="img/5.jpg" alt="" class="img-responsive"></div>
+								<div class="col-md-3"><img src="img/6.jpg" alt="" class="img-responsive"></div>
+								<div class="col-md-3"><img src="img/7.jpg" alt="" class="img-responsive"></div>
+								<div class="col-md-3"><img src="img/8.jpg" alt="" class="img-responsive"></div>
+							</div>
+							<button type="button" class="btn btn-success">Показать еще</button>
+						</div>
+					</div>
+				</div>
+				<div id="panel2" class="tab-pane fade">
+					<h3>Панель 2</h3>
+					<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Что заманивший последний это единственное ручеек, взобравшись приставка обеспечивает рекламных необходимыми, от всех напоивший вопроса запятой своих рыбного себя инициал, оксмокс.</p>
+				</div>
+				<div id="panel3" class="tab-pane fade">
+					<h3>Панель 3</h3>
+					<p>Содержимое 3 панели...</p>
+				</div>
+				<div id="panel4" class="tab-pane fade">
+					<h3>Панель 4</h3>
+					<p>Содержимое 4 панели...</p>
+				</div>
+				<div id="panel5" class="tab-pane fade">
+					<h3>Панель 5</h3>
+					<p>Содержимое 5 панели...</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- **************************************************** -->
 
+<!-- блок популярное -->
+<div class="block-popup">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<ul class="nav nav-tabs">
+					<li class="active"><a data-toggle="tab" href="#panel-popup1">Популярное</a></li>
+					<li><a data-toggle="tab" href="#panel-popup2">Новинки</a></li>
+					<li><a data-toggle="tab" href="#panel-popup3">Распродажа</a></li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+			<div class="tab-content">
+				<div id="panel-popup1" class="tab-pane fade in active">
+					<div class="col-md-3"><img src="img/9.jpg" alt="" class="img-responsive"></div>
+					<div class="col-md-3"><img src="img/2.jpg" alt="" class="img-responsive"></div>
+					<div class="col-md-3"><img src="img/3.jpg" alt="" class="img-responsive"></div>
+					<div class="col-md-3"><img src="img/4.jpg" alt="" class="img-responsive"></div>
+					<div class="clearfix"></div>
+					<div class="col-md-3"><img src="img/5.jpg" alt="" class="img-responsive"></div>
+					<div class="col-md-3"><img src="img/6.jpg" alt="" class="img-responsive"></div>
+					<div class="col-md-3"><img src="img/7.jpg" alt="" class="img-responsive"></div>
+					<div class="col-md-3"><img src="img/8.jpg" alt="" class="img-responsive"></div>
+				</div>
+				<div id="panel-popup2" class="tab-pane fade">
+					<h3>Панель 2</h3>
+					<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Что заманивший последний это единственное ручеек, взобравшись приставка обеспечивает рекламных необходимыми, от всех напоивший вопроса запятой своих рыбного себя инициал, оксмокс.</p>
+				</div>
+				<div id="panel-popup3" class="tab-pane fade">
+					<h3>Панель 3</h3>
+					<p>Содержимое 3 панели...</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- *********************************************************** -->
 
+<!-- покупать у нас выгодно -->
+<div class="pokup-vigodno">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Покупать у нас выгодно</h2>
+			</div>
+			<div class="col-md-3">
+				<figure>
+					<i class="glyphicon glyphicon-knight"></i>
+					<figcaption>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-3">
+				<figure>
+					<i class="glyphicon glyphicon-knight"></i>
+					<figcaption>Последний подзаголовок себя, маленький семантика точках своего знаках решила меня!</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-3">
+				<figure>
+					<i class="glyphicon glyphicon-knight"></i>
+					<figcaption>Которое языкового буквенных от всех, ты даже своих, живет речью несколько.</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-3">
+				<figure>
+					<i class="glyphicon glyphicon-knight"></i>
+					<figcaption>Рыбного маленькая образ ее, раз переписывается о, пустился рекламных рукописи.</figcaption>
+				</figure>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- ********************************************* -->
 
-
+<!-- подвал -->
+<footer style="background-color: #424242">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.	
+			</div>
+			<div class="col-md-2">
+				Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
+			</div>
+			<div class="col-md-2">
+				Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
+			</div>
+			<div class="col-md-5">
+				Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
+			</div>			
+		</div>
+	</div>
+</footer>
+<!-- ****************************************** -->
 
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
+	
 
 </body>
 </html>

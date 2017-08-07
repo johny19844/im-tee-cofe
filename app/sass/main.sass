@@ -41,49 +41,152 @@ body
 	display: block
 	max-width: 100%
 	height: auto
+.active
+	border-bottom: 1px solid $accent
+.caret
+	margin-left: 5px
+.transition
+	animation-iteration-count: 0
+	animation-duration: .3s
 
+// Верхняя линия меню
 .top-line
+	background-color: #f8f8f8
 	ul
-		font-size: 12px
+		font-size: 14px
 		list-style-type: none
 		li
-			float: left
-			display: block
-.navbar2	
-	.navbar-form 
-		.btn
-			border-radius: 20px
-			background-color: $accent
-			color: #fff
-		.form-control
-			border-radius: 20px
-	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus
-		background-color: transparent
-	.navbar-right 
-		margin: 8px 0
-		li
-			text-align: center
-			a
-				width: 40px
-				height: 40px
-				border-radius: 30px
-				background-color: $accent
-				text-align: center
-				i
-					color: #fff
-					text-align: center
-					//width: 40px
-					//height: 40px
-					//margin: 0 auto
-					display: block
-					//padding-right: 10px
-					:before
-						//padding-right: 10px
+			display: inline-block
+			padding: 0 20px 1px 20px
+		a
+			color: #000
+			&:visited, &:link
+				text-decoration: none
+			&:visited, &:active 
+	.contacts
+		text-align: right
+	.phone
+		color: #000
+		font-size: 14px
+		font-weight: bold
+		margin-left: 10px
+		.fa-phone
+			margin-right: 10px
+			font-size: 16px
+	.ui.input input
+		border: none
+		border-bottom: 1px solid $accent
+		padding-bottom: 0 !important
+	.ui.input input:focus, .ui.input.focus input
+		border-color: $accent
 
-			span
-				position: absolute
-				top: 0
-				right: 0
-			
+	.ui.button.dropdown .menu
+		max-width: 100%
+		transition: none
+	.ui.floating.dropdown .menu
+		margin-top: 0 !important
+		border-radius: 0 !important
+		box-shadow: none !important
+	.ui.dropdown .scrolling.menu
+		border-top: none
+	.ui.labeled.icon.button, .ui.labeled.icon.buttons .button
+		margin: 0 !important
+		padding-left: 30px !important
+		background-color: transparent
+		width: 160px
+		&.active.visible
+			background-color: #FFF
+			display: inline-block
+			border: 1px solid rgba(34, 36, 38, 0.15)
+			border-bottom: none
+	.ui.labeled.icon.button > .icon, .ui.labeled.icon.buttons > .button > .icon
+		background-color: transparent
+	.ui.dropdown .menu .selected.item, .ui.dropdown.selected
+		background: rgba(134,175,73,.3)
+	.ui.dropdown .menu > .item:hover
+		background: rgba(134,175,73,.1)
+	.ui.labeled.icon.button > .icon, .ui.labeled.icon.buttons > .button > .icon
+		left: 0
+	.ui.icon.button, .ui.icon.buttons .button
+		padding: 6px 0
+// ***********************************************
+
+// навбар меню
+// настройка поля поиска
+
+.navbar2
+	.navbar
+		padding-top: 20px
+		padding-bottom: 10px
+		margin-bottom: 0
+		.open > .dropdown-menu
+			//position: relative
+			max-height: 190px
+			//width: length(ul.dropdown-menu)
+			display: flex
+			flex-flow: column wrap
+			min-width: 0
+			li
+				//display: inline-flex
+				//flex-flow: column wrap
+				//position: static
+	.ui.input input
+		border-radius: 30px
+	i.inverted.bordered.icon, i.inverted.circular.icon 
+		background-color: $accent !important
+	.ui.icon.input > i.icon
+		opacity: 1
+	.ui.icon.input > i.circular.icon
+		right: 0
+		top: 0
+		width: 2.6em !important
+		height: 2.6em !important
+ 
+// *********************************************
+
+// блок быстрый поиск
+.links-bistr-poisk
+	text-align: center
+	.nav
+		display: flex
+		justify-content: space-between
+		border: none
+		li a:hover
+			background-color: transparent
+			border: none
+			transparent: none
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus
+	border: none
+	border-bottom: 1px solid $accent
+
+// блок фильтрации быстрого поиска
+.block-filter
+	background-color: #e7eddf
+	height: 80px
+	.btn-group
+		width: 100%
+	.filter-vibor 
+		*
+			display: inline-block
+	.filtr-button
+		width: 90%
+		margin: 0 auto
+		border-bottom: 1px solid $accent
+	.dropdown-menu
+		width: 100%
+		margin: 0
+		padding: 0
+		border-top: none
+		border-radius: 0
+		box-shadow: none
+		.checkbox
+			padding-left: 10px
+	.btn-group.open
+		border: 1px solid rgba(0, 0, 0, 0.15)
+		border-bottom: none
+		background-color: #FFF
+// ******************************************************
+
+	
 
 @import "media" // Всегда в конце

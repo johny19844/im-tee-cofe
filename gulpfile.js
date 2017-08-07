@@ -21,7 +21,7 @@ gulp.task('common-js', function() {
 		'app/js/common.js',
 		])
 	.pipe(concat('common.min.js'))
-	.pipe(uglify())
+	//.pipe(uglify())
 	.pipe(gulp.dest('app/js'));
 });
 
@@ -29,6 +29,7 @@ gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/bootstrap-3.3.7-dist/js/bootstrap.min.js',
+		'app/libs/semantic/semantic.min.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
